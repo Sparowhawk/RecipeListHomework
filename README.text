@@ -1,0 +1,46 @@
+
+### Steps to Run the App
+1. Open up app in Xcode
+2. Click Run in Xcode
+
+### Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
+
+I prioritized performance by Caching images, only calling the api's when necessary(Recipe list api on button press or app load or on refresh and images when they appear in the list and if it isn't already cached), and by using no 3rd party libraries so that it's light weight and only has what is necessary for the requirements.
+
+I also chose to focus a little on architecture as I believe in making the code readable and reusable. I ideally would break this up even further if there was going to be more reusability ofcode depending on what the stakeholder of such an app would like. Without additional requirements necessitating the break up of code further though it is simpler and more readable in it's current state.
+
+### Time Spent: Approximately how long did you spend working on this project? How did you allocate your time?
+
+A little under 4 hours. The first 15 minutes I broke up the requirements to separate tasks for me to work on(in no particular order) such as:
+1. Setup Caching(App delegate and Scene Delegate setup)
+2. Recipe List API and Model creation
+3. Handle loading State, error state, malformed data and empty data cases
+4. Image API creation
+5. Creating the Successful API call list view
+6. Cleanup Code
+7. Unit tests
+8. Readme
+
+I then started going through my tasks and creating what I needed. Looking up any thing that I happened to need to execute the task at hand, which took me about 2 hours to get the code working as intended with it's requirements.
+
+I then created some unit tests, which I could have done this the opposite way with starting with the unit tests and done a more TDD approach, but I felt it would be faster this way by doing them after the fact and didn't want to go over on time. I also could have architected this in a way to make it a little easier to test. I also could have crated more tests to cover more cases, but I felt this was enough for the homework.
+
+After the unit tests I created the Readme.
+
+### Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
+
+I didn't make any significant trade-offs aside from creating the app and then adding in unit testing. Given more time and more requirements I would probably have gone with a TDD approach if it made sense based on the requirements and had a figma UX design.
+
+### Weakest Part of the Project: What do you think is the weakest part of your project?
+
+The weakest part of the project is probably the UI since it's just a basic list with no fluff. I could have spent some time on that, but I am not an overly artistic person and that would be more for a designer.
+
+I also would have liked to have utilized concurrency more and I might have if there were multiple images or videos loaded in each item in the list. I however did not implement those so while I could have utilized it a bit more I feel this is sufficient.
+
+### External Code and Dependencies: Did you use any external code, libraries, or dependencies?
+
+I did take some snippets I needed(setting up a cache and a little bit of the api calls having used libraries for both in the past), but outside of those snippets there wasn't any external code
+
+### Additional Information: Is there anything else we should know? Feel free to share any insights or constraints you encountered.
+
+I don't really have much else to share. Given more time and a design I would have liked to make this much more appealing to the eye and include stuff like accessibility, internationalization for more language support, the videos and source urls, maybe even a 2nd screen with the large image as a focal point. Maybe even include the recipe steps themselves by scraping the source url for those details if it exists. I also would have liked to implement a sort and filter option for cuisine and name. I also would have liked to flesh out a better error, malformed data, no data, and loading states to make them more appealing as well.
